@@ -1,0 +1,14 @@
+version: "2"
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: pgadmin
+      POSTGRES_PASSWORD: pgadmin
+      POSTGRES_DB: app
+      
