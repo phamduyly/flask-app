@@ -12,7 +12,7 @@ ENV FLASK_RUN_HOST=0.0.0.0
 RUN pip install -r requirements.txt
 
 # copy every content from the local file to the image
-COPY . /app
+COPY . /appexpor
 
 # configure the container to run in an executed manner
 EXPOSE 5000
